@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestAll" parallel="false">
+	<listeners>
+
+		<listener class-name="com.terra.qatest1.ExecutionListener1" />
+		<listener class-name="com.terra.qatest1.ExecutionTestListener1" />
+
+	</listeners>
+
+	<test name="scheduler">
+		<classes>
+			<class name="com.terra.qatest1.TestScheduler" />
+		</classes>
+	</test>
+
+	<test name="database">
+		<classes>
+
+			<class name="com.terra.qatest1.TestDatabase" />
+
+		</classes>
+
+	</test>
+
+	<test name="iot">
+		<classes>
+
+			<class name="com.terra.qatest1.TestIot" />
+		</classes>
+
+
+	</test>
+
+
+</suite>

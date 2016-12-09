@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestAll]">
+  <listeners>
+    <listener class-name="com.terra.qatest1.ExecutionListener1"/>
+    <listener class-name="com.terra.qatest1.ExecutionTestListener1"/>
+  </listeners>
+  <test name="scheduler(failed)">
+    <classes>
+      <class name="com.terra.qatest1.TestScheduler">
+        <methods>
+          <include name="testScheduler2"/>
+        </methods>
+      </class> <!-- com.terra.qatest1.TestScheduler -->
+    </classes>
+  </test> <!-- scheduler(failed) -->
+  <test name="iot(failed)">
+    <classes>
+      <class name="com.terra.qatest1.TestIot">
+        <methods>
+          <include name="testScheduler2"/>
+        </methods>
+      </class> <!-- com.terra.qatest1.TestIot -->
+    </classes>
+  </test> <!-- iot(failed) -->
+</suite> <!-- Failed suite [TestAll] -->
